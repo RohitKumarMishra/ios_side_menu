@@ -1,7 +1,7 @@
 name: ios_side_menu
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: Flutter package written purely into dart.
+version: 1.0.0
+homepage: https://github.com/RohitKumarMishra/ios_side_menu
 
 environment:
   sdk: '>=2.19.6 <3.0.0'

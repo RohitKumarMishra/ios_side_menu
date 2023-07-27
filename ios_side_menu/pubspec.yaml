@@ -1,6 +1,6 @@
 name: ios_side_menu
 description: Flutter package written purely into dart.
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/RohitKumarMishra/ios_side_menu
 # This package supports all platforms listed below.
 platforms:

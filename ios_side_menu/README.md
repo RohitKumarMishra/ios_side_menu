@@ -1,5 +1,5 @@
 # iOS Side Menu
-![pub package](https://img.shields.io/badge/pub-v1.0.0-blue)
+![pub package](https://img.shields.io/badge/pub-v1.0.3-blue)
 
 A Flutter plugin to use the pure dart code API.
 

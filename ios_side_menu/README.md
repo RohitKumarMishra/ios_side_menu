@@ -4,11 +4,9 @@
 A Flutter plugin to use the pure dart code API.
 
 ## Usage
+https://github.com/RohitKumarMishra/ios_side_menu/assets/14270768/2508f715-7b4a-44a1-aba0-9afbd28fb1f8.mp4?raw=true
+
 Add `ios_side_menu` as a dependency in your project.
-
-
-https://github.com/RohitKumarMishra/ios_side_menu/assets/14270768/d5f84ae8-1857-4393-a5ad-91ab55045d62
-
 
 You can directly use it inside your home page or wherever you want to show the side menu like below - 
 ```dart

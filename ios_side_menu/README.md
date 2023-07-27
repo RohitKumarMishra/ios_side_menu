@@ -4,7 +4,8 @@
 A Flutter plugin to use the pure dart code API.
 
 ## Usage
-https://github.com/RohitKumarMishra/ios_side_menu/assets/14270768/2508f715-7b4a-44a1-aba0-9afbd28fb1f8
+![Demo](https://github.com/RohitKumarMishra/ios_side_menu/assets/14270768/93131cec-0ae8-4ff0-bf8f-21f35190d43d)
+
 
 Add `ios_side_menu` as a dependency in your project.
 

@@ -1,0 +1,11 @@
+# Flutter tooling leftovers from treating this folder as an app.
+android/
+ios/
+linux/
+macos/
+windows/
+.dart_tool/
+.idea/
+*.iml
+.DS_Store
+local.properties

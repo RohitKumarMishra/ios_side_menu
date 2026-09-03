@@ -1,65 +1,56 @@
 # iOS Side Menu
-![pub package](https://img.shields.io/badge/pub-v1.0.3-blue)
+![pub package](https://img.shields.io/pub/v/ios_side_menu.svg)
 
-A Flutter plugin to use the pure dart code API.
+A Flutter widget that slides an iOS-style side menu over the main screen.
+Pure Dart — no native plugins.
 
-## Usage
 ![Demo](https://github.com/RohitKumarMishra/ios_side_menu/assets/14270768/93131cec-0ae8-4ff0-bf8f-21f35190d43d)
 
+## Install
 
-Add `ios_side_menu` as a dependency in your project.
+```yaml
+dependencies:
+  ios_side_menu: ^1.1.0
+```
 
-You can directly use it inside your home page or wherever you want to show the side menu like below - 
+## Usage
+
 ```dart
-GlobalKey<IosSideMenuWidgetState> sideMenuState = GlobalKey();
+import 'package:ios_side_menu/ios_side_menu.dart';
+
+final GlobalKey<IosSideMenuWidgetState> sideMenuState = GlobalKey();
 
 IosSideMenuWidget(
-        key: sideMenuState,
-        sideMenuWidth: 270,
-        sideMenuWidget: Container(
-          decoration: BoxDecoration(
-          // To Add extra elevation effect in side menu container
-            boxShadow: [
-              BoxShadow(
-                color: Colors.green.withOpacity(0.5),
-                spreadRadius: 5,
-                blurRadius: 7,
-                offset: Offset(0, 3), // changes position of shadow
-              ),
-            ],
-          ),
-          margin: EdgeInsets.zero,
-          child: Container(
-            decoration: const BoxDecoration(color: Colors.white),
-            height: double.maxFinite,
-            width: double.maxFinite,
-          ),
-        ),
-        mainMenuWidget: Scaffold(
-          appBar: AppBar(
-            title: Text('Side Menu'),
-            leading: IconButton(
-              onPressed: () {
-                if (sideMenuState.currentState!.isSideMenuVisible) {
-                  sideMenuState.currentState!.hideSideMenu();
-                } else {
-                  sideMenuState.currentState!.openSideMenu();
-                }
-              },
-              icon: const Icon(Icons.menu),
-            ),
-          ),
-          body: Container(
-            decoration: const BoxDecoration(
-              color: Colors.blue,
-            ),
-            height: double.maxFinite,
-            width: double.maxFinite,
-          ),
-        ),
-      )
+  key: sideMenuState,
+  sideMenuWidth: 270,
+  sideMenuWidget: const ColoredBox(color: Colors.white),
+  mainMenuWidget: Scaffold(
+    appBar: AppBar(
+      title: const Text('Side Menu'),
+      leading: IconButton(
+        onPressed: () {
+          final IosSideMenuWidgetState? state = sideMenuState.currentState;
+          if (state == null) {
+            return;
+          }
+          if (state.isSideMenuVisible) {
+            state.hideSideMenu();
+          } else {
+            state.openSideMenu();
+          }
+        },
+        icon: const Icon(Icons.menu),
+      ),
+    ),
+    body: const ColoredBox(color: Colors.blue),
+  ),
+);
 ```
+
+Swipe from the left edge, or call `openSideMenu()` / `hideSideMenu()` on the
+state. See `example/` for a runnable app.
 
 ## Issues and feedback
 
-All the feedbacks and PR's are welcome.
+Issues and pull requests are welcome:
+https://github.com/RohitKumarMishra/ios_side_menu

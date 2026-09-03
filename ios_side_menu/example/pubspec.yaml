@@ -1,0 +1,19 @@
+name: ios_side_menu_example
+description: Demonstrates the ios_side_menu widget.
+publish_to: 'none'
+version: 1.1.0
+
+environment:
+  sdk: '>=2.19.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  ios_side_menu:
+    path: ../
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true

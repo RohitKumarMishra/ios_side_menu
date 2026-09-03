@@ -1,3 +1,7 @@
+## 1.1.1
+
+* Stop publishing the local `build/` folder.
+
 ## 1.1.0
 
 * Longer package description for pub.dev scoring.

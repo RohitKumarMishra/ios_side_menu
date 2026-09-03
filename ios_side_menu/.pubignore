@@ -9,3 +9,4 @@ windows/
 *.iml
 .DS_Store
 local.properties
+build/

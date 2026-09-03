@@ -78,10 +78,11 @@ packages:
   ios_side_menu:
     dependency: "direct main"
     description:
-      path: ios_side_menu
-      relative: true
-    source: path
-    version: "0.0.1"
+      name: ios_side_menu
+      sha256: "3e6d0c71481cf765dd3f21730e74c21c927b95f0b44e662f57f48696dc7f53c7"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
   js:
     dependency: transitive
     description:
